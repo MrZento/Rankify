@@ -2,24 +2,20 @@ import { ActivityType } from 'discord.js';
 import { BotConfig } from './structures/types'; 
 
 export const config: BotConfig = {
-    groupId: 33207787,
+    groupId: 16039840,
     slashCommands: true,
     legacyCommands: {
         enabled: false,
         prefixes: ['q!'],
     },
     permissions: {
-        all: [''],
-        ranking: [''],
-        users: [''],
-        shout: [''],
-        join: [''],
-        signal: [''],
-        admin: [''],
+        all: ['1297332810994155636'],
+        ranking: ['1361711337058599155'],
+        users: ['1361711337058599155'],
+        admin: ['1297332810994155636'],
     },
     logChannels: {
-        actions: '',
-        shout: '',
+        actions: '1349655036954935306',
     },
     api: false,
     maximumRank: 255,
@@ -33,11 +29,6 @@ export const config: BotConfig = {
         channelId: '',
         milestone: 100,
         onlyMilestones: false,
-    },
-    xpSystem: {
-        enabled: false,
-        autoRankup: false,
-        roles: [],
     },
     antiAbuse: {
         enabled: false,
