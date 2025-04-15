@@ -1,6 +1,6 @@
-import { discordClient, robloxClient, robloxGroup } from '../../main';
-import { CommandContext } from '../../structures/addons/CommandAddons';
-import { Command } from '../../structures/Command';
+import { discordClient, robloxClient, robloxGroup } from '../../../../src/main';
+import { CommandContext } from '../../../../src/structures/addons/CommandAddons';
+import { Command } from '../../../../src/structures/Command';
 import {
     getInvalidRobloxUserEmbed,
     getRobloxUserIsNotMemberEmbed,
@@ -12,14 +12,14 @@ import {
     getAlreadySuspendedEmbed,
     noSuspendedRankLog,
     getNoDatabaseEmbed,
-} from '../../handlers/locale';
-import { checkActionEligibility } from '../../handlers/verificationChecks';
-import { config } from '../../config';
+} from '../../../../src/handlers/locale';
+import { checkActionEligibility } from '../../../../src/handlers/verificationChecks';
+import { config } from '../../../../src/config';
 import { User, PartialUser, GroupMember } from 'bloxy/dist/structures';
-import { logAction } from '../../handlers/handleLogging';
-import { getLinkedRobloxUser } from '../../handlers/accountLinks';
+import { logAction } from '../../../../src/handlers/handleLogging';
+import { getLinkedRobloxUser } from '../../../../src/handlers/accountLinks';
 import ms from 'ms';
-import { provider } from '../../database';
+import { provider } from '../../../../src/database';
 
 class SuspendCommand extends Command {
     constructor() {

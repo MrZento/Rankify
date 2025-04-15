@@ -1,11 +1,11 @@
-import { CommandContext } from '../../structures/addons/CommandAddons';
-import { Command } from '../../structures/Command';
-import { discordClient, robloxClient, robloxGroup } from '../../main';
+import { CommandContext } from '../../../../src/structures/addons/CommandAddons';
+import { Command } from '../../../../src/structures/Command';
+import { discordClient, robloxClient, robloxGroup } from '../../../../src/main';
 import { User, PartialUser, GroupMember } from 'bloxy/dist/structures';
-import { getLinkedRobloxUser } from '../../handlers/accountLinks';
-import { checkActionEligibility } from '../../handlers/verificationChecks';
-import { provider } from '../../database';
-import { logAction } from '../../handlers/handleLogging';
+import { getLinkedRobloxUser } from '../../../../src/handlers/accountLinks';
+import { checkActionEligibility } from '../../../../src/handlers/verificationChecks';
+import { provider } from '../../../../src/database';
+import { logAction } from '../../../../src/handlers/handleLogging';
 import {
     getInvalidRobloxUserEmbed,
     getRobloxUserIsNotMemberEmbed,
@@ -14,8 +14,8 @@ import {
     getSuccessfulGroupBanEmbed,
     getNoDatabaseEmbed,
     getUserBannedEmbed
-} from '../../handlers/locale';
-import { config } from '../../config';
+} from '../../../../src/handlers/locale';
+import { config } from '../../../../src/config';
 
 class GroupBanCommand extends Command {
     constructor() {

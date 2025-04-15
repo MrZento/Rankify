@@ -48,18 +48,6 @@ export interface BotConfig {
          */
         users?: string[];
         /**
-         * Access to the shout command.
-         */
-        shout?: string[];
-        /**
-         * Access to the join-requests, accept-join, and deny-join commands.
-         */
-        join?: string[];
-        /**
-         * Access to the signal command.
-         */
-        signal?: string[];
-        /**
          * Access to the revert-ranks, exile, groupban, and ungroupban command.
          */
         admin?: string[];
@@ -142,33 +130,6 @@ export interface BotConfig {
          * Should the bot log member counts that are not milestones?
          */
         onlyMilestones?: boolean;
-    }
-    /**
-     * Configuration for the XP system.
-     */
-    xpSystem: {
-        /**
-         * Should the XP system be enabled?
-         */
-        enabled: boolean;
-        /**
-         * Should users be ranked up if they meet requirements after their XP is changed through commands?
-         */
-        autoRankup: boolean;
-        /**
-         * Roles that users can rank up to.
-         */
-        roles?: {
-            /**
-             * The rank number of this role.
-             */
-            rank: number;
-            /**
-             * The minimum XP that a user needs to rank up to this role.
-             * They will always rank up to the one with the highest XP.
-             */
-            xp: number;
-        }[];
     }
     /**
      * Configuration for the anti abuse feature. This works by demoting users who exceed the action threshold within the set amount of time.

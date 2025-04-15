@@ -1,9 +1,9 @@
-import { discordClient, robloxClient, robloxGroup } from '../../main';
-import { CommandContext } from '../../structures/addons/CommandAddons';
-import { Command } from '../../structures/Command';
+import { discordClient, robloxClient, robloxGroup } from '../../../../src/main';
+import { CommandContext } from '../../../../src/structures/addons/CommandAddons';
+import { Command } from '../../../../src/structures/Command';
 import { PartialUser, User, GroupMember } from 'bloxy/dist/structures';
-import { getLinkedRobloxUser } from '../../handlers/accountLinks';
-import { config } from '../../config';
+import { getLinkedRobloxUser } from '../../../../src/handlers/accountLinks';
+import { config } from '../../../../src/config';
 import {
     getInvalidRobloxUserEmbed,
     getNoDatabaseEmbed,
@@ -11,8 +11,8 @@ import {
     getRobloxUserIsNotMemberEmbed,
     getUnexpectedErrorEmbed,
     getUserInfoEmbed,
-} from '../../handlers/locale';
-import { provider } from '../../database';
+} from '../../../../src/handlers/locale';
+import { provider } from '../../../../src/database';
 
 class InfoCommand extends Command {
     constructor() {

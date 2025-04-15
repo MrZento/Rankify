@@ -2,24 +2,20 @@ import { ActivityType } from 'discord.js';
 import { BotConfig } from './structures/types'; 
 
 export const config: BotConfig = {
-    groupId: 0,
+    groupId: 16039840,
     slashCommands: true,
     legacyCommands: {
-        enabled: true,
+        enabled: false,
         prefixes: ['q!'],
     },
     permissions: {
-        all: [''],
-        ranking: [''],
-        users: [''],
-        shout: [''],
-        join: [''],
-        signal: [''],
-        admin: [''],
+        all: ['1297332810994155636'],
+        ranking: ['1361711337058599155'],
+        users: ['1361711337058599155'],
+        admin: ['1297332810994155636'],
     },
     logChannels: {
-        actions: '',
-        shout: '',
+        actions: '1349655036954935306',
     },
     api: false,
     maximumRank: 255,
@@ -34,11 +30,6 @@ export const config: BotConfig = {
         milestone: 100,
         onlyMilestones: false,
     },
-    xpSystem: {
-        enabled: false,
-        autoRankup: false,
-        roles: [],
-    },
     antiAbuse: {
         enabled: false,
         clearDuration: 1 * 60,
@@ -46,10 +37,10 @@ export const config: BotConfig = {
         demotionRank: 1,
     },
     activity: {
-        enabled: false,
-        type: ActivityType.Watching,
-        value: 'for commands.',
+        enabled: true,
+        type: ActivityType.Playing,
+        value: 'Creation Mode (Unavailable)',
     },
-    status: 'online',
+    status: 'dnd',
     deleteWallURLs: false,
 }
